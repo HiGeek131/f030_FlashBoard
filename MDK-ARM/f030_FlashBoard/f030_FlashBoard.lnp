@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"f030_flashboard\startup_stm32f030x6.o"
+"f030_flashboard\main.o"
+"f030_flashboard\gpio.o"
+"f030_flashboard\tim.o"
+"f030_flashboard\stm32f0xx_it.o"
+"f030_flashboard\stm32f0xx_hal_msp.o"
+"f030_flashboard\stm32f0xx_hal_tim.o"
+"f030_flashboard\stm32f0xx_hal_tim_ex.o"
+"f030_flashboard\stm32f0xx_hal_rcc.o"
+"f030_flashboard\stm32f0xx_hal_rcc_ex.o"
+"f030_flashboard\stm32f0xx_hal.o"
+"f030_flashboard\stm32f0xx_hal_i2c.o"
+"f030_flashboard\stm32f0xx_hal_i2c_ex.o"
+"f030_flashboard\stm32f0xx_hal_gpio.o"
+"f030_flashboard\stm32f0xx_hal_dma.o"
+"f030_flashboard\stm32f0xx_hal_cortex.o"
+"f030_flashboard\stm32f0xx_hal_pwr.o"
+"f030_flashboard\stm32f0xx_hal_pwr_ex.o"
+"f030_flashboard\stm32f0xx_hal_flash.o"
+"f030_flashboard\stm32f0xx_hal_flash_ex.o"
+"f030_flashboard\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "f030_FlashBoard\f030_FlashBoard.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "f030_FlashBoard.map" -o f030_FlashBoard\f030_FlashBoard.axf
